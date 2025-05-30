@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-image:linear-gradient(rgba(4, 9, 30, 0.091),rgba(4, 9, 30, 0.091)),url(images/Avion.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+a {
+  padding: 10px 20px;
+  border: 1px solid #ffa300;
+  background-color:#ffa300 ;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 1%;
+
+}
+
+a:hover {
+  background: #0976d0;
+  color: #fff;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 40px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: #ffa300;
+  margin-right: 10px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  border: 1px solid #ffa300;
+  background-color:#ffa300 ;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0976d0;
+  color: #fff;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+}
+
+.about h3 {
+  margin-bottom: 10px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  color: #ffa300;
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #0976d0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    margin: 0 0 20px;
+  }
+}
+  </style>
+</head>
+<body>
+  <a href="index.html" class="hero-btn" id="Page1">Back Accueil</a>
+  <section class="contact">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fa fa-home"></i>
+        <p>Dixinn Rue 15, Batiment horizon<br>Conakry, Guinée</p>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-phone"></i>
+        <p>+224 622 200 003<br>Du Lundi au Samedi, de 9h _ 18h</p>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-envelope"></i>
+        <p>Halphaguicontact@gmail.com<br>Envoyer-Nous votre requête</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Enter your name" required />
+        <input type="email" placeholder="Enter Email Address" required />
+        <input type="text" placeholder="Enter your Subject" required />
+        <textarea placeholder="message" required></textarea>
+        <button type="submit">Envoyer le Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="about">
+      <h3>À Propos de Nous</h3>
+      <p>Chez Halphagui Voyage, nous croyons que chaque voyage est une aventure.
+        Notre agence vous accompagne dans la decouverte de destination inoubliable
+        à travers le monde. Nous mettons tous en oeuvre pour faire de votre voyage 
+        une expériences mémorable.
+      </p>
+      <div class="social-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome CDN for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

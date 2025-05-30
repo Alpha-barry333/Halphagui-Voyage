@@ -1,0 +1,774 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family:sans-serif;
+}
+/*==================================HEADER=================================*/
+.header
+{
+	background-image:linear-gradient(rgba(4, 9, 30, 0.525),rgba(4, 9, 30, 0.525)),url(images/home_image.jpg);
+	min-height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+}
+nav
+{
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img
+{
+width: 150px;
+}
+.nav-links
+{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li 
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+}
+.nav-links ul li a
+{
+text-decoration: none;
+color: white;
+font-size: 15px;
+text-transform: uppercase;
+}
+.nav-links ul li ::after
+{
+	content: '';
+	width: 0% ;
+	height: 2px;
+	background: #ffa300;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+
+}
+.nav-links ul li :hover::after
+{
+	width: 100%;
+}
+
+/* ---------------------------------------- home ---------------------------------------------------*/
+
+.home
+{
+	padding-right: 1%;
+	box-sizing: border-box;
+
+}
+
+.home .content
+{
+	text-align: center;
+	padding-top: 60px;
+
+}
+.home .content h5
+{
+	color: white;
+	font-size: 60px;
+	font-weight: 50px;
+	text-shadow: 0 1px 1px black;
+}
+.home .content h1
+{
+color: white;
+font-size: 80px;
+font-weight: 550px;
+text-shadow: 0 1px 1px black;
+margin-top: 5px;
+}
+.home .content p 
+{
+	color: #0976d0;
+	font-size: 25px;
+	font-weight: 600px;
+	margin-bottom: 30px;
+	margin-top: 5px;
+	text-shadow: 0 1px 1px black;
+
+}
+.changecontent::after
+{
+	content: '';
+	color: #ffa300;
+	text-shadow: 0 1px 1px black;
+	animation: changetext 10s infinite linear;
+	font-size: 55px;
+
+}
+@keyframes changetext
+
+{ 
+	0%{content:"La Russie";}   
+	10%{content:"Le Dubai";}
+	20%{content:"La France";}
+	30%{content:"Le Japon";}
+	40%{content:"Le Royaume-Uni";}
+	50%{content:"L'Italie";}
+	60%{content:"Le Canada";}
+	70%{content:"L'Espagne";}
+	80%{content:"Les États-Unis";}
+
+}
+/*-----------------Campus------------------------*/
+.campus
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.campus-col 
+{
+	flex-basis:32% ;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.campus-col img 
+{
+	width: 100%;
+	display: block;
+}
+.layer
+{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover
+{
+background: #ffa20097;
+}
+.layer h3 
+{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layer:hover h3 
+{
+	bottom: 49%;
+	opacity: 1;
+}
+
+/*------------------------- Card et autre --------------------------------*/
+
+.border {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0976d0 0%, #ffa300 100%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+  width: 90%;
+}
+
+.h1_R {
+  text-align: center;
+  color: #0976d0;
+  margin-bottom: 30px;
+  height: 5px;
+}
+
+.h1_R span {
+  color: #ffa300;
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ffa300;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e08c00;
+}
+
+
+
+/*----------------------------------------------------*/
+
+.section-discover
+{
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 70px;
+
+	
+}
+.slider 
+{
+	width: 800px;
+	height: 500px;
+	border-radius: 10px;
+	overflow:hidden;
+
+	
+}
+.section___title
+{
+	font-size: 22px;
+	color: black;
+}
+.slides
+{
+	width: 500px;
+	height: 500px;
+	display: flex;
+
+}
+.slides input
+{
+	display: none;
+}
+.slide
+{
+	transition: 2s;
+	width: 160%;
+
+}
+.slide img 
+{
+	width: 800px;
+	height: 500px;
+
+}
+.navigation-manual
+{
+	position: absolute;
+	width: 800px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+
+}
+.manual-btn
+{
+	border: 2px solid #e08c00;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child)
+{
+	margin-right: 40px;
+}
+
+.manual-btn:hover
+{
+	background: #0976d0;
+}
+#radio1:checked ~ .first
+{
+	margin-left: 0;
+}
+#radio2:checked ~ .first
+{
+	margin-left: -160%;
+}
+
+#radio3:checked ~ .first
+{
+	margin-left: -320%;
+}
+
+#radio4:checked ~ .first
+{
+	margin-left: -480%;
+}
+
+#radio5:checked ~ .first
+{
+	margin-left: -640%;
+}
+
+#radio6:checked ~ .first
+{
+	margin-left: -800%;
+}
+.navigation-auto
+{
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+.navigation-auto div 
+{
+	border: 2px solid #0976d0;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+.navigation-auto div:not(:last-child)
+{
+	margin-right: 40px
+}
+#radio1:checked ~ .navigation-auto .auto-btn1;
+{
+	background: pink;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn;
+{
+	background: pink;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3;
+{
+	background: pink;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4;
+{
+	background: pink;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5;
+{
+	background: pink;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6;
+{
+	background: pink;
+}
+
+
+/*---------------------------- Fin card et autre ----------------------------------*/
+
+.hero-btn
+{
+	display:inline-block;
+	text-decoration: none;
+	color: #fff;
+    background-color: #ffa300;
+	border: 1px solid #ffa300;
+	padding: 12px 34px;
+	font-size: 14px;
+	border: transparent;
+	cursor: pointer;
+}
+.hero-btn:hover
+{
+	border: 1px solid  #0976d0;
+	background:  #0976d0;
+	transition:1s;
+    text-transform: capitalize;
+}
+/*================================== CALL TO ACTION=================================*/
+.cta 
+{
+margin: 100px auto;
+width: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/bel.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+text-align: center;
+padding: 100px 0;
+}
+.cta h1 
+{
+color: #fff;
+margin-bottom: 40px;
+padding: 0;
+}
+
+/*---------------------------------------------- Fin Call TO ACTION -------------------*/
+
+/*-------------------------------- Services ------------------------------*/
+.sevices
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	
+}
+.services-col
+{
+	flex-basis: 41%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+}
+.services-col img 
+{
+	width: 40%;
+	border-radius: 10px;
+	margin-top:70px;
+	margin-left: 70px;
+}
+.services-col p 
+{
+	padding: 0;
+	width: 80%;
+}
+.services-col h3
+{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: left;
+	color: #ffa300;
+	margin-left: 70px;
+}
+.row
+{
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-between;
+	
+}
+.services h1 
+{
+	text-align: center;
+	margin-top: 100px;
+}
+.row3
+{
+	display:flex;
+	margin-top: 5%;
+	justify-content: space-between;
+	background-image:linear-gradient(rgba(4, 9, 30, 0.295),rgba(4, 9, 30, 0.295)),url(images/ville.jpeg);
+	min-height: 30vh;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+.row3 p 
+{
+	margin-left: 70px;
+	color: white;
+
+}
+/*-------------------------------- Footer ------------------------------*/
+.footer
+{
+	width: 	100%;
+	background-color: #ffa20021;
+	text-align: center;
+	padding: 30px 0;
+}
+.icon .fa 
+{
+	color: #ffa300;
+}
+.fa-heart-o
+{
+	color: #ffa300;
+}
+
+/*-------------------------- Reservation --------------*/
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #ffa300;
+}
+
+.problem {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  gap: 50px;
+}
+
+.text-zone {
+  max-width: 380px;
+  margin-right: 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.text-zone h2 {
+  color: #0976d0;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text-zone p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffa300;
+}
+
+.cards-zone {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.cards-zone h3{
+	color: #ffa300;
+	text-align: center;
+}
+.cards-zone h4{
+	color: #ffa300;
+	text-align: center;
+}
+.cards-zone p{
+	color: #fff;
+}
+
+.card {
+  position: relative;
+  width: 210px;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-shadow: 0 1px 5px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+#home_R{
+	padding: 15px 10px;
+}
+
+
+/* ✅ Responsive pour écran < 768px */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-zone {
+    margin: 0;
+    text-align: center;
+  }
+
+  .cards-zone {
+    grid-template-columns: 1fr;
+  }
+}
+/*--------------- les Pays --------------*/
+
+.pays
+{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.pays-col 
+{
+	flex-basis:32% ;
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.pays-col img 
+{
+	width: 100%;
+	display: block;
+}
+.layers
+{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layers:hover
+{
+background: #0976d08c; /*#ffa20097*/
+}
+.layers h3
+{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layers:hover h3
+{
+	bottom: 49%;
+	opacity: 1;
+}
+
+.layers a
+{
+	width: 30%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 15px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s;
+}
+.layers:hover a
+{
+	bottom: 20%;
+	opacity: 1;
+}
+#Page1{
+	
+}
+#Page2{
+	margin-left: 80%;
+}
+
+/*---------------- Social icon ----------------------*/ 
+.social-icons i {
+	margin: 0 10px;
+	color: #ffa300;
+	cursor: pointer;
+}
+
+.social-icons i:hover {
+	color: #0976d0; 
+}
+/*-------------- responsivité ------*/
+
+
+
+/* ✅ Rendre le slider responsive */
+@media (max-width: 768px) {
+	.slider {
+		width: 100%;
+		height: auto;
+	}
+
+	.slide img {
+		width: 100%;
+		height: auto;
+	}
+
+	.navigation-manual,
+	.navigation-auto {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
+
+/* ✅ Ajuster la section .cta */
+@media (max-width: 768px) {
+	.cta {
+		padding: 50px 0;
+	}
+
+	.cta h1 {
+		font-size: 20px;
+	}
+}
+
+/* ✅ Ajuster les cards */
+@media (max-width: 768px) {
+	.cards-zone {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.card {
+		width: 100%;
+		height: 250px;
+	}
+}
+
+/*-------------- responsivité ------*/

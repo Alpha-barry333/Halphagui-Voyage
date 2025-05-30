@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription Voyageur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="border">
+  <a href="index.html" class="hero-btn" id="home_R">Back Accueil</a>
+  <div class="container">
+    <h1 class="h1_R"><span>✈</span> Formulaire De Reservation</h1>
+    <form>
+      <label for="nom">Nom complet</label>
+      <input type="text" id="nom" name="nom" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="telephone">Numéro de téléphone</label>
+      <input type="tel" id="telephone" name="telephone" required />
+
+      <label for="destination">Choisissez votre destination</label>
+      <select id="destination" name="destination" required>
+        <option value="">-- Sélectionnez un pays --</option>
+        <option value="france">France</option>
+        <option value="usa">États-Unis</option>
+        <option value="italie">Italie</option>
+        <option value="espagne">Espagne</option>
+        <option value="japon">Japon</option>
+        <option value="mexique">Mexique</option>
+        <option value="royaume-uni">Royaume-Uni</option>
+        <option value="thailande">Thaïlande</option>
+        <option value="canada">Canada</option>
+        <option value="bresil">Brésil</option>
+      </select>
+
+      <label for="depart">Date de départ</label>
+      <input type="date" id="depart" name="depart" required />
+
+      <label for="retour">Date de retour</label>
+      <input type="date" id="retour" name="retour" required />
+
+      <button type="submit">Réserver ma place</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -14,18 +14,23 @@
 <body>
     <!-- ==================================HEADER================================= -->
 	<section class="header">
-        <nav> <!-- nav -->
-            <a href="index.html"> <img src="images/Logo.png"></a>
-            <div class="nav-links">  <!-- nav-links -->
-                <ul> <!-- ul -->
-                    <li><a href="index.html">Accueil</a></li>
-				    <li><a href="reservation.html">Réservation</a></li>
-                    <li><a href="À Propos.html">À Propos De Nous</a></li>
-		 		    <li><a href="Contact.html">Contactez-Nous</a></li>
-		 	    </ul> <!--fin ul -->
-		 	</div> <!--fin nav-links -->
-			
-		</nav> <!--fin nav -->
+		<nav>
+			<a href="index.html">
+				<img src="images/Logo.png" alt="Logo">
+			</a>
+		
+			<button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+		
+			<div class="nav-links">
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="reservation.html">Réservation</a></li>
+					<li><a href="À Propos.html">À Propos De Nous</a></li>
+					<li><a href="Contact.html">Contactez-Nous</a></li>
+				</ul>
+			</div>
+		</nav>
+		  
         <div class="home"> <!-- home -->
             <div class="content">
                 <h5>Préparer votre futur destination</h5>
@@ -44,46 +49,46 @@
           	<p>
           		Laisser nous vous faire découvrir les plus grands hotels du monde.
           	</p>
-          	 <div class="row"> <!-- row -->
+          	 <div class="itemsHotel"> <!-- row -->
           		<!-- campus-col -->
-          	<div class="campus-col">
-          		<img src="images/Dubai1.jpeg"/>
-          		<!-- layer -->
-          		<div class="layer">
-          			<h3>Dubai</h3>
-          			
-          		</div>
-          		<!-- fin layer -->
+				<div class="item">
+					<img src="images/Dubai1.jpeg"/>
+					<!-- layer -->
+					<div class="layer">
+						<h3>Dubai</h3>
+						
+					</div>
+					<!-- fin layer -->
 
-          		
-          	</div>
-          	<!-- fin campus-col -->
-          	<!-- campus-col -->
-          	<div class="campus-col">
-          		<img src="images/Hotel-Mahfouf.jpeg"/>
-          		<!-- layer -->
-          		<div class="layer">
-          			<h3>Hotel Mahfouf</h3>
-          			
-          		</div>
-          		<!-- fin layer -->
+					
+				</div>
+				<!-- fin campus-col -->
+				<!-- campus-col -->
+				<div class="item">
+					<img src="images/Hotel-Mahfouf.jpeg"/>
+					<!-- layer -->
+					<div class="layer">
+						<h3>Hotel Mahfouf</h3>
+						
+					</div>
+					<!-- fin layer -->
 
-          		
-          	</div>
-          	<!-- fin campus-col -->
-          	<!-- campus-col -->
-          	<div class="campus-col">
-          		<img src="images/hotel-noom.jpg"/>
-          		<!-- layer -->
-          		<div class="layer">
-          			<h3>Noom Hotel</h3>
-          			
-          		</div>
-          		<!-- fin layer -->
+					
+				</div>
+				<!-- fin campus-col -->
+				<!-- campus-col -->
+				<div class="item">
+					<img src="images/hotel-noom.jpg"/>
+					<!-- layer -->
+					<div class="layer">
+						<h3>Noom Hotel</h3>
+						
+					</div>
+					<!-- fin layer -->
 
-          		
-          	</div>
-          	<!--  fin campus-col -->
+					
+				</div>
+				<!--  fin campus-col -->
           	</div> <!--fin row -->
           	
           	<h1>Nos Services</h1>
@@ -138,73 +143,77 @@
 	<!-- =========================Fin de nos services========================= -->
 	 <!--=========================================== slide =========================-->
 	<section class="discover section-discover">
-        <div class="section___title">Découvrez le monde à travers nos pays,<br>
-        	rencontrez des personnalités d'autres horizon.</div>
+        <div class="section___title">
+			Découvrez le monde à travers nos pays,<br>
+        	rencontrez des personnalités d'autres horizon.
+		</div>
         	
-			<div class="slider">
-       	        <div class="slides">
+		<div class="slider">
+			<div class="slides">
+				
+				<div class="inputRadios">
 					<input type="radio" name="radio-btn" id="radio1">
-       					<input type="radio" name="radio-btn" id="radio2">
-       						<input type="radio" name="radio-btn" id="radio3">
-       							<input type="radio" name="radio-btn" id="radio4">
-       								<input type="radio" name="radio-btn" id="radio5">
-       									<input type="radio" name="radio-btn" id="radio6">
-
-										<div class="slide">
-											<img src="images/lac.jpg">
-											
-										</div>
-										
-										<div class="slide first">
-       										<img src="images/bel.jpg">
-       									</div>
-       						
-
-										<div class="slide">
-											<img src="images/Esp.jpg">
-											
-										</div>
-
-										<div class="slide">
-											<img src="images/bea.jpeg">
-											
-										</div>
-
-										<div class="slide">
-											<img src="images/canada.jpg">
-											
-										</div>
-
-										<div class="slide">
-											<img src="images/nouveau.jpg">
-											
-										</div>
-
-										<div class="slide">
-											<img src="images/sey.jpg">
-											
-										</div>
-
-
-										<div class="navigation-auto">
-										<div class="auto-btn1"></div>
-
-											<div class="auto-btn2"></div>
-											<div class="auto-btn3"></div>
-											<div class="auto-btn4"></div>
-											<div class="auto-btn5"></div>
-											<div class="auto-btn6"></div>
-										</div>
+					<input type="radio" name="radio-btn" id="radio2">
+					<input type="radio" name="radio-btn" id="radio3">
+					<input type="radio" name="radio-btn" id="radio4">
+					<input type="radio" name="radio-btn" id="radio5">
+					<input type="radio" name="radio-btn" id="radio6">
 				</div>
-       	                <div class="navigation-manual">
-       	                	<label for="radio1" class="manual-btn"></label>
-       	                	<label for="radio2" class="manual-btn"></label>
-       	                	<label for="radio3" class="manual-btn"></label>
-       	                	<label for="radio4" class="manual-btn"></label>
-       	                	<label for="radio5" class="manual-btn"></label>
-       	                	<label for="radio6" class="manual-btn"></label>
-			</div>	    </div>
-       	</div>
+
+				<div class="slide">
+					<img src="images/lac.jpg">
+					
+				</div>
+				
+				<div class="slide first">
+					<img src="images/bel.jpg">
+				</div>
+	
+
+				<div class="slide">
+					<img src="images/Esp.jpg">	
+				</div>
+
+				<div class="slide">
+					<img src="images/bea.jpeg">
+					
+				</div>
+
+				<div class="slide">
+					<img src="images/canada.jpg">
+					
+				</div>
+
+				<div class="slide">
+					<img src="images/nouveau.jpg">
+					
+				</div>
+
+				<div class="slide">
+					<img src="images/sey.jpg">
+					
+				</div>
+
+
+				<!-- <div class="navigation-auto">
+				<div class="auto-btn1"></div>
+
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+					<div class="auto-btn6"></div>
+				</div> -->
+			</div>
+			<!-- <div class="navigation-manual">
+				<label for="radio1" class="manual-btn"></label>
+				<label for="radio2" class="manual-btn"></label>
+				<label for="radio3" class="manual-btn"></label>
+				<label for="radio4" class="manual-btn"></label>
+				<label for="radio5" class="manual-btn"></label>
+				<label for="radio6" class="manual-btn"></label>
+			</div>	     -->
+		</div>
 
     </section>
 
@@ -223,28 +232,30 @@
 	<section class="services">
 		<h1>Pourquoi nous choisir?</h1>
 		<div class="row3"> <!-- row3 -->
-          	<div class="services-col"> <!-- services-col -->
-          		<img src="images/prix.JFIF">
-          		<h3>Garantie de prix abordable</h3>
-          		<p>Chez Halphagui Voyage, nous nous engageons à vous offrir des tarifs
-					 compétitifs pour tous vos voyages. Nous travaillons avec les
-					  meilleurs partenaires pour vous garantir un excellent 
-					  rapport qualité-prix.</p>
-          	</div> <!--fin services-col -->
-          	<div class="services-col"> <!-- services-col -->
-          		<img src="images/télécharger.JFIF">
-          		<h3>Destination très variées</h3>
-          		<p>Nous vous proposons un large choix de destinations pour répondre à
-					 toutes vos envies d’évasion : plages paradisiaques, aventures en 
-					 montagne ou découvertes culturelles.
-				  </p>
-          	</div> <!--fin services-col -->
-          	<div class="services-col"> <!-- services-col -->
-          		<img src="images/pouce.jpg">
-          		<h3>Service hautement qualifié</h3>
-          		<p>Notre équipe expérimentée met tout en œuvre pour vous offrir un service
-					 personnalisé et de qualité, afin de rendre votre voyage inoubliable.</p>
-          	</div> <!--fin services-col -->
+          	<div class="items">
+				<div class="services-col"> <!-- services-col -->
+					<img src="images/prix.JFIF">
+					<h3>Garantie de prix abordable</h3>
+					<p>Chez Halphagui Voyage, nous nous engageons à vous offrir des tarifs
+						compétitifs pour tous vos voyages. Nous travaillons avec les
+						meilleurs partenaires pour vous garantir un excellent
+						rapport qualité-prix.</p>
+				</div> <!--fin services-col -->
+				<div class="services-col"> <!-- services-col -->
+					<img src="images/télécharger.JFIF">
+					<h3>Destination très variées</h3>
+					<p>Nous vous proposons un large choix de destinations pour répondre à
+						toutes vos envies d’évasion : plages paradisiaques, aventures en
+						montagne ou découvertes culturelles.
+					</p>
+				</div> <!--fin services-col -->
+				<div class="services-col"> <!-- services-col -->
+					<img src="images/pouce.jpg">
+					<h3>Service hautement qualifié</h3>
+					<p>Notre équipe expérimentée met tout en œuvre pour vous offrir un service
+						personnalisé et de qualité, afin de rendre votre voyage inoubliable.</p>
+				</div> <!--fin services-col -->
+			</div>
         </div> <!-- fin row3 -->
 	</section>
     <!-- ==================================fin Infrastructure=================================-->
@@ -263,6 +274,16 @@
 	<!-- Font Awesome CDN for icons -->
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!-- ===================================Fin FOOTER================================-->
+
+	<script>
+		const toggleBtn = document.querySelector('.menu-toggle');
+		const navLinks = document.querySelector('.nav-links');
+
+		toggleBtn.addEventListener('click', () => {
+			navLinks.classList.toggle('active');
+		});
+	</script>
+	  
      
 </body>
 </html>
